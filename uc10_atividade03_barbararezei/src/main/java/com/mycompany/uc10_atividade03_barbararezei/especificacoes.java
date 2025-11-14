@@ -273,7 +273,9 @@ public class especificacoes extends javax.swing.JFrame {
         pa.setRemedio(remediotextfield.getText());
         pa.setInfremedio(inftextarea.getText());
         
-        pacientecadastrar.cadastrar(pa);
+        /**pacientecadastrar.cadastrar(pa);
+         * codigo alterado puramente para a etapa de testes 
+         */
         
     }//GEN-LAST:event_pacicadastrarActionPerformed
 

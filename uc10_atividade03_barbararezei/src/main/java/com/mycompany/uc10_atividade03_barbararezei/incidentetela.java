@@ -172,7 +172,9 @@ public class incidentetela extends javax.swing.JFrame {
         in.setHora(horatextfield.getText());
         in.setRelato(sintomatextarea.getText());
         
-        incidentecadastrar.cadastrar(in);
+        /**incidentecadastrar.cadastrar(in);
+         * codigo mudado apenas para testes 
+         */
     }//GEN-LAST:event_registrobuttonActionPerformed
 
     /**

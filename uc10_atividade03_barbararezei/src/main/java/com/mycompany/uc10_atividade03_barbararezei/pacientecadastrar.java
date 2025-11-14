@@ -14,9 +14,12 @@ import java.util.List;
 public class pacientecadastrar {
     
     
-     public static void cadastrar(paciente p )
+     public  boolean cadastrar(paciente p )
     {
     EntityManager manager = JPAUtil.conectar();
+    /**
+     * codigo alterado para etapa de testes 
+     */
         
   
     
@@ -24,10 +27,12 @@ public class pacientecadastrar {
        manager.getTransaction().begin();
        manager.persist(p);
        manager.getTransaction().commit();
+       return true;
     
    }catch(Exception e )
    {
        manager.getTransaction().rollback();
+       return false;
    }finally
     {
         JPAUtil.desconectar();

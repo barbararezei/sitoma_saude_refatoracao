@@ -14,20 +14,24 @@ import java.util.List;
 
 public class incidentecadastrar {
     
-     public static void cadastrar(incidente i )
+     public boolean cadastrar(incidente i )
     {
     EntityManager manager = JPAUtil.conectar();
         
-  
+  /**
+   * codigo mudado para teste 
+   */
     
     try{
        manager.getTransaction().begin();
        manager.persist(i);
        manager.getTransaction().commit();
+        return true;
     
    }catch(Exception e )
    {
        manager.getTransaction().rollback();
+       return false;
    }finally
     {
         JPAUtil.desconectar();

@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 /*excluir tudoooooo */
 
-public class conecao {
+public class conecaobuscarid {
     
     private Connection conexao;
 
